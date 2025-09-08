@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exoteric Surfaces — Company Profile</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      /* Minor styling to resemble brochure look */
+      :root {
+        --brand: #0d6efd;
+        --accent: #212529;
+      }
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #222; line-height: 1.5; }
+      .hero {
+        background: url('/path/to/hero.jpg') center/cover no-repeat;
+        min-height: 320px;
+        display:flex;
+        align-items:center;
+        color: #fff;
+      }
+      .logo {
+        max-height: 60px;
+      }
+      .section-title { letter-spacing: 0.05em; font-weight:600; }
+      .service-card { border: 1px solid #e9ecef; border-radius: .5rem; padding: 1rem; height:100%; }
+      .feature-list li { margin-bottom: .25rem; }
+      .project-thumb { height: 140px; object-fit: cover; border-radius: .5rem; }
+      footer { background:#f8f9fa; padding:2rem 0; margin-top:2rem; }
+      .muted-uppercase { text-transform:uppercase; font-size:.75rem; color:#6c757d; letter-spacing:.08em;}
+    </style>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="/path/to/logo.png" alt="Exoteric Surfaces" class="logo me-2">
+          <div>
+            <div style="font-weight:700">EXOTERIC SURFACES</div>
+            <small class="text-muted">Transforming Spaces to Perfection</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero text-center text-white">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Exoteric Surfaces</h1>
+        <p class="lead mb-4">Transforming spaces to perfection — finest selection of wall and floor tiles, turnkey facade & glazing solutions.</p>
+        <a href="#services" class="btn btn-light btn-lg">Explore Services</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+
+      <!-- ABOUT -->
+      <section id="about" class="mb-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title">About Us</h2>
+            <p>We, <strong>Exoteric Surfaces</strong>, are the perfect end for customers who look for choosing the finest selection of wall and floor tiles. Our tagline is <em>“TRANSFORMING SPACES TO PERFECTION”</em>. We strive to give the best materials at competitive prices along with a pleasant experience and unmatched after-sales service.</p>
+            <p>We endure gratification for every experience that we offer, created to share something truly meaningful. Perfection doesn’t exist, but we promise you a better product experience.</p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title">Our Philosophy</h2>
+            <p>We focus on delivering awe-inspiring products with high-end finishes which is clearly evident from our <strong>3Cs Design Philosophy</strong>: <em>Contrive, Create, Customize</em>. This philosophy forms the building block of EXOTERIC SURFACES' brand positioning which motivates us to deliver aesthetic and functional value to customers of this new and futuristic millennium.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO WE ARE / WHAT WE DO -->
+      <section id="who" class="mb-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h3 class="section-title">Who We Are</h3>
+            <p>We are a full-service building & facade consultant providing turnkey solutions for facade, structural glazing, curtain wall, aluminium doors & windows, railings, tiles, MS/SS framework and many more solutions.</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="section-title">What We Do</h3>
+            <p>For the retail and building industries, we provide development and installation of structural glazing systems, thin tile building cladding, glass facades, aluminium doors & windows, and complete turnkey facade solutions.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TURNKEY -->
+      <section id="turnkey" class="mb-5">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h4 class="section-title">Turnkey Facade Solutions</h4>
+            <p>A turnkey project is designed, developed and equipped with all facilities by a company under contract, handed over to the buyer when ready to operate. Our company provides complete turnkey solutions at agreed costs and timelines while ensuring quality and performance.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES GRID -->
+      <section id="services" class="my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="section-title">Services</h3>
+          <div class="muted-uppercase">Our Offerings</div>
+        </div>
+
+        <div class="row g-3">
+          <!-- list of services as cards -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Porcelain Thin Tiles</h5>
+              <p>Versatile, low maintenance choice — recommended for external facades. Sizes available: 600×1200mm, 1000×3000×3mm, 1200×2400×6mm.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Louvers</h5>
+              <p>Exterior & interior louvers in aluminium, WPC, ACP and other materials — used for ventilation, sun control and aesthetics.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Railings</h5>
+              <p>Glass railings, SS and MS railings — straight line glass railing, tilted glass railing and various combinations.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Main Entrance Doors & Gates</h5>
+              <p>High-quality entrance doors & gates: aluminium louver profile gates, SS gates, MS gates with HPL/wood/ACP finishes.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Aluminium & uPVC Windows</h5>
+              <p>Durable and secure window solutions tailored to facades and interiors, with custom designs and finishes.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Jaalis</h5>
+              <p>Decorative perforated screens in aluminium, SS, stone and more — used for architectural decoration and interior enhancement.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Glazing System</h5>
+              <p>Structurally glazed systems and curtain wall assemblies that create seamless transparency with fewer interruptions from metal framing.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Cladding System</h5>
+              <p>Aluminium composite panel (ACP) cladding, Fundermax/HPL, stone cladding, dry cladding systems and certified panel installers.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Fabrication</h5>
+              <p>Custom fabrication services for MS, aluminium, stainless steel and structural steel to meet project-specific needs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS / FLOORING -->
+      <section id="products" class="my-5">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h4 class="section-title">Flooring</h4>
+            <p>Floor covering solutions for various needs — laminate and hardwood floorings among our offerings. Floor covering describes any finish material applied over a floor structure to provide a walking surface.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <h4 class="section-title">Porcelain Thin Tile Sizes</h4>
+            <ul class="feature-list list-unstyled">
+              <li>600 × 1200 mm</li>
+              <li>1000 × 3000 × 3 mm</li>
+              <li>1200 × 2400 × 6 mm</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- GLAZING & CLADDING -->
+      <section class="my-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h4 class="section-title">Glazing System</h4>
+            <p>Glazing systems such as semi-unitised and unitised curtain walls, partition glazing, entrances and cable/tension structures. Types include semi-unitised glazing, unitised glazing, partition glazing, cable-and-tension systems and sunroofs.</p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="section-title">Cladding System</h4>
+            <p>We offer aluminium ACP cladding, Fundermax/HPL, stone cladding, panel cladding and CNC routed tray systems along with certified installers for panel cladding.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FABRICATION -->
+      <section class="my-5">
+        <h4 class="section-title">Fabrication</h4>
+        <p>We have an in-house fabrication division offering customized fabrication in MS, aluminium, stainless steel and structural steel to meet bespoke design needs.</p>
+      </section>
+
+      <!-- PROJECT GALLERY (placeholder thumbnails) -->
+      <section id="projects" class="my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="section-title">Our Projects</h3>
+          <div class="muted-uppercase">Selected Work</div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-sm-6 col-md-4">
+            <img src="/path/to/project1.jpg" alt="Project 1" class="project-thumb w-100 mb-2">
+            <h6 class="mb-0">Project Title 1</h6>
+            <small class="text-muted">Facade / Cladding</small>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <img src="/path/to/project2.jpg" alt="Project 2" class="project-thumb w-100 mb-2">
+            <h6 class="mb-0">Project Title 2</h6>
+            <small class="text-muted">Glazing System</small>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <img src="/path/to/project3.jpg" alt="Project 3" class="project-thumb w-100 mb-2">
+            <h6 class="mb-0">Project Title 3</h6>
+            <small class="text-muted">Porcelain Cladding</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="my-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h4 class="section-title">Contact Us</h4>
+            <p><strong>Phone:</strong> 9625418801 / 9625618801</p>
+            <p><strong>Email:</strong> <a href="mailto:sales@exotericsurfaces.com">sales@exotericsurfaces.com</a></p>
+            <p>For enquiries on projects, products or fabrication, get in touch and our team will help you transform your space.</p>
+          </div>
+
+          <div class="col-md-6">
+            <h4 class="section-title">Quick Inquiry</h4>
+            <form>
+              <div class="mb-2">
+                <label class="form-label">Name</label>
+                <input class="form-control" type="text" placeholder="Your name">
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" placeholder="you@example.com">
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="3" placeholder="Tell us about your project"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h5 class="mb-1">Exoteric Surfaces</h5>
+            <p class="mb-0">Transforming spaces to perfection — turnkey facade, glazing, cladding, tiles and fabrication solutions.</p>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <small class="text-muted">Contact: 9625418801 / 9625618801 &nbsp; | &nbsp; sales@exotericsurfaces.com</small>
+            <div class="mt-2">
+              <a href="#" class="me-2">LinkedIn</a>
+              <a href="#" class="me-2">Instagram</a>
+              <a href="#">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
