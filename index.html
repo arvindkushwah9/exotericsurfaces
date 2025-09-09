@@ -38,25 +38,37 @@
 
     <!-- Schema.org JSON-LD for SEO -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Exoteric Surfaces",
-      "url": "https://www.exotericsurfaces.com",
-      "logo": "https://www.exotericsurfaces.com/images/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-9625418801",
-        "contactType": "sales",
-        "email": "sales@exotericsurfaces.com"
-      },
-      "sameAs": [
-        "https://www.facebook.com/exotericsurfaces",
-        "https://www.instagram.com/exotericsurfaces",
-        "https://www.linkedin.com/company/exotericsurfaces"
-      ]
-    }
-    </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Exoteric Surfaces",
+        "image": "https://www.exotericsurfaces.com/images/logo.png",
+        "url": "https://www.exotericsurfaces.com",
+        "telephone": "+91-9876543210",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sector 62",
+          "addressLocality": "Noida",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "201301",
+          "addressCountry": "IN"
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Noida",
+          "Greater Noida",
+          "Gurugram",
+          "Lucknow",
+          "Chandigarh",
+          "Jaipur",
+          "Mumbai",
+          "Bangalore",
+          "Hyderabad"
+        ]
+      }
+      </script>
+
+
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -89,6 +101,10 @@
         height: 250px;        /* fixed height */
         object-fit: cover;    /* crop instead of squish */
       }
+      .service-thumb {
+        height: 180px;         /* fixed height */
+        object-fit: cover;     /* crop instead of stretch */
+      }
     </style>
   </head>
   <body>
@@ -111,9 +127,9 @@
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -282,6 +298,49 @@
         <h4 class="section-title">Fabrication</h4>
         <p>We have an in-house fabrication division offering customized fabrication in MS, aluminium, stainless steel and structural steel to meet bespoke design needs.</p>
       </section>
+
+      <section id="services" class="my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="section-title">Services</h3>
+          <div class="muted-uppercase">Our Offerings</div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projects/project-6.jpeg" class="card-img-top service-thumb" alt="Porcelain Thin Tiles">
+              <div class="card-body">
+                <h5 class="card-title">Porcelain Thin Tiles</h5>
+                <p class="card-text">Versatile, low maintenance choice — recommended for external facades. Sizes: 600×1200mm, 1000×3000×3mm, 1200×2400×6mm.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projects/project-8.jpeg" class="card-img-top service-thumb" alt="Louvers">
+              <div class="card-body">
+                <h5 class="card-title">Louvers</h5>
+                <p class="card-text">Exterior & interior louvers in aluminium, WPC, ACP and other materials — used for ventilation, sun control and aesthetics.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projects/project-12.jpeg" class="card-img-top service-thumb" alt="Glass & Metal Railings">
+              <div class="card-body">
+                <h5 class="card-title">Railings</h5>
+                <p class="card-text">Glass railings, SS and MS railings — straight line glass railing, tilted glass railing and various combinations.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more cards for other services -->
+        </div>
+      </section>
+
+
 
       <!-- PROJECT GALLERY (placeholder thumbnails) -->
       <section id="projects" class="my-5">
