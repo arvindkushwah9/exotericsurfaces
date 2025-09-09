@@ -492,21 +492,61 @@
 
           <div class="col-md-6">
             <h4 class="section-title">Quick Inquiry</h4>
-            <form>
+            <form id="contactForm" action="https://www.bitterntec.com/exotericsurfaces_contact" method="post">
+              <input type="hidden" name="authenticity_token" value="abc123xyz..." />
               <div class="mb-2">
                 <label class="form-label">Name</label>
-                <input class="form-control" type="text" placeholder="Your name">
+                <input class="form-control" name="contact[name]" type="text" placeholder="Your name" required="required">
               </div>
               <div class="mb-2">
                 <label class="form-label">Email</label>
-                <input class="form-control" type="email" placeholder="you@example.com">
+                <input class="form-control" name="contact[email]" type="email" placeholder="you@example.com" required="required">
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Phone</label>
+                <input class="form-control" name="contact[phone]" type="number" placeholder="9100000000" required="required">
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Subject</label>
+                <input class="form-control" name="contact[subject]" type="text" placeholder="Subject" required="required">
               </div>
               <div class="mb-2">
                 <label class="form-label">Message</label>
-                <textarea class="form-control" rows="3" placeholder="Tell us about your project"></textarea>
+                <textarea class="form-control" name="contact[message]" rows="3" placeholder="Tell us about your project" required="required"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Send Inquiry</button>
             </form>
+            <!-- Confirmation message -->
+            <div id="formMessage" class="alert alert-success mt-3 d-none">
+              ✅ Thank you! Your inquiry has been submitted successfully.
+            </div>
+            <script>
+              document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Stop normal form submission
+
+                let form = this;
+                let messageBox = document.getElementById("formMessage");
+
+                // Show confirmation after 3 seconds
+                setTimeout(() => {
+                  messageBox.classList.remove("d-none");
+                }, 2000);
+
+                // Submit the form normally (to your backend) in the background
+                fetch(form.action, {
+                  method: form.method,
+                  body: new FormData(form)
+                }).then(response => {
+                  console.log("Form submitted successfully");
+                }).catch(error => {
+                  console.error("Form submission failed", error);
+                });
+
+                // Reset form fields
+                form.reset();
+              });
+              </script>
+
           </div>
         </div>
       </section>
