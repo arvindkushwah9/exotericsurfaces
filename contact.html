@@ -1314,6 +1314,7 @@
                                         <textarea id="wpforms-210-field_2" class="wpforms-field-medium"
                                         name="contact[message]" placeholder="Tell us about your project" required>
                                         </textarea>
+                                        <input type="text" name="contact[fax_number]" id="fax_number_hidden" style="display:none;">
                                       </div>
                                     </div>
                                     <div class="wpforms-submit-container">
@@ -1639,6 +1640,19 @@
     </div>
     <!-- #page -->
     <script data-cfasync="false" src="assets/js/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("wpforms-form-210");
+        const hiddenInput = document.getElementById("fax_number_hidden");
+
+        if (!form || !hiddenInput) return;
+
+        form.addEventListener("submit", function (event) {
+          // Add value only when user actually clicks submit
+          hiddenInput.value = "from india";
+        });
+      });
     </script>
     <script type="speculationrules">
       {
